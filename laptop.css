@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+
+
+    
+}
+
+
+
+body{
+    background: #F2EEEE;
+    transition: 0.6s linear;
+    margin-top: 10rem;
+  }
+
+  
+.fa-gem{
+    color: #8FC579;
+}
+
+
+.fa-shopping-cart {
+    color: #8FC579;
+}
+
+.fa-shopping-cart:hover {
+    color: #8FC579;
+    cursor: pointer;
+}
+
+.red-circle {
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right: 1515px;
+    padding: 0 5px;
+    border-radius: 30%;
+    
+  
+
+}
+
+
+
+
+ 
+#header-carousel {
+    height: 1000px;
+  }#cazza1 {
+    height: 1000px;
+    background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1226&q=80');
+    background-position: center center;
+    background-size: cover;
+  }#cazza2 {
+    height: 1000px;
+    background-image: url('https://cdn.cnetcontent.com/syndication/mediaserverredirect/9f50d42683d344103f0ef5098f77b44e/original.jpg');
+    background-position: center center;
+    background-size: cover;
+  }#cazza3 {
+    height: 1000px;
+    background-image: url('https://media.wired.com/photos/5aac5d73624d1d6458b787a0/191:100/pass/Dell-XPS-13-Pattern-Image.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  
+
+
+  /* cart  */
+  .cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.cart-overlay{
+    margin-right: 600px;
+}
+
+ 
+
+
+
+
+.cart-row {
+    display: flex;
+    
+}
+
+.cart-item {
+    transition: all 2s ease-in-out;
+}
+
+
+  
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+
+.content-section{
+    right: 300px;
+}
+
+
+
+
+/* shopping cart slider */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+
+
+ .dropdown-menu{
+    float: right;
+ }
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 0px;
+    right: 600px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.cart-2{
+    right: 600px;
+}
+
+
+
+
+
+/* .shopping-cart {
+  margin: 20px 0;
+  float: right;
+  background: whitesmoke;
+  width: 320px;
+  position: relative;
+  border-radius: 3px;
+  padding: 20px;
+  
+   
+} */
+
+.shopping-cart:after {
+	bottom: 100%;
+	left: 89%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: white;
+	border-width: 8px;
+	margin-left: -8px;
+}
+
+
+
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+  
+  
+  
+
+
+/* shopping cart slider */
+
+ 
+
+
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+.container {
+    margin: auto;
+    width: 80%;
+  }
+
+
+/* .container{
+    padding: 10rem 0;
+} */
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0,  0.2);
+}
+
+.card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+
+
+}
+
+.card h1{
+    font-size: 2.5rem;
+    color: black;
+    margin: 1.5rem 0;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+
+
+.cards{
+    grid-column: 2 / span 12;
+    display: grid; 
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+}
+.card{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #393902;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+} 
+
+
+.carousel-inner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.Carousel-text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vmin;
+    white-space: nowrap;
+}
+
+.Carousel-text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    font-size: 7vmin;
+    white-space: nowrap;
+}
+
+
+.Carousel-text-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vmin;
+    color: black;
+    white-space: nowrap;
+}
+
+.Secondary-text-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    font-size: 7vmin;
+    font-size: 5vmin;
+    color: white;
+    white-space: nowrap;
+}
+
+.Secondary-text-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vmin;
+    color:white;
+    white-space: nowrap;
+}
+
+.Secondary-text-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vmin;
+    color: whitesmoke;
+    white-space: nowrap;
+}
+
+.Carousel-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    white-space: nowrap;
+    
+}
+
+
+  
+
+
+
+
+
+.row > div[class*='col-'] {
+    display: flex;
+    flex:1 0 auto;
+  }
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    
+    
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem;
+
+    }
+}
+
+
+.page-footer{
+    text-align: center;
+    color: white;
+}
+    
+
+ 
+
+ @media screen and (max-width: 1000px) {
+    #header-carousel {
+        height: 500px;
+      }#cazza1 {
+        height: 500px;
+        background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1226&q=80');
+        background-position: center center;
+        background-size: cover;
+      }#cazza2 {
+        height: 500px;
+        background-image: url('https://cdn.cnetcontent.com/syndication/mediaserverredirect/9f50d42683d344103f0ef5098f77b44e/original.jpg');
+        background-position: center center;
+        background-size: cover;
+      }#cazza3 {
+        height: 500px;
+        background-image: url('https://media.wired.com/photos/5aac5d73624d1d6458b787a0/191:100/pass/Dell-XPS-13-Pattern-Image.jpg');
+        background-position: center center;
+        background-size: cover;
+      }
+   
+
+    
+
+    .carousel-inner > .item {
+        height: 300px;
+     }
+
+   }
+
+
+    
+
+
