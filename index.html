@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../laptop.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="app.js"async></script>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0cacb7fda8.js" crossorigin="anonymous"></script>
+
+
+    <title>E-commerce Website</title>
+
+</head>
+
+<div class="top-nav-bar">
+  <div class="search-box">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <i class="fas fa-gem fa-3x"></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+           
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="headphones.html">Laptops</a>
+              <a class="dropdown-item" href="accessories.html">Mice & computer accessories</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+          <form class="form-inline">
+              <span class="nav-icon">
+                     
+               
+                 <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" id="cart"><i class="fas fa-shopping-cart fa-2x fa- cart-info__icon"></a></i>
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                         <section class="container content-section">
+                             <h2 class="section-header">CART</h2>
+                             <div class="cart-row">
+                                 <span class="cart-item cart-header cart-column">ITEM</span>
+                                 <span class="cart-price cart-header cart-column">PRICE</span>
+                                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                             </div>
+                             <div class="cart-items">
+                             </div>
+                             <div class="cart-total">
+                                 <strong class="cart-total-title">Total</strong>
+                                 <span class="cart-total-price">$0</span>
+                             </div>
+                             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                         </section>
+                     </div>
+                   </div>
+ 
+                         
+                   
+             <img src="red-circle.png" alt="" class="red-circle" style="display:none">
+               </span>
+               
+               </div>
+         
+             </form>
+             <form class="form-inline">
+               
+             </form>
+ 
+             
+           </nav>
+         </form>
+         
+        </ul>
+        
+
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <nav class="navbar navbar-dark bg-dark"> -->
+            <!-- <form class="form-inline">
+             <span class="nav-icon">
+                    
+              
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <a href="#" id="cart"><i class="fas fa-shopping-cart fa-2x fa- cart-info__icon"></a></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <section class="container content-section">
+                            <h2 class="section-header">CART</h2>
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">ITEM</span>
+                                <span class="cart-price cart-header cart-column">PRICE</span>
+                                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                            </div>
+                            <div class="cart-items">
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Total</strong>
+                                <span class="cart-total-price">$0</span>
+                            </div>
+                            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                        </section>
+                    </div>
+                  </div>
+
+                        
+                  
+            <img src="./img/red-circle.png" alt="" class="red-circle">
+              </span>
+              
+              </div>
+        
+            </form>
+
+            
+          </nav>
+        </form> -->
+      </div>
+  </nav>
+     
+  <!-- <div class="container">
+      <div class="shopping-cart">
+       <section class="container content-section">
+              <div class="cart-overlay">
+                <div id="cart" class="cart">
+                
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                    
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">£0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                </div>
+              </div>
+            </section>  -->
+    
+        
+    
+        
+      </div> <!--end shopping-cart -->
+    </div> <!--end container -->
+  
+ 
+     
+  <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="cazza1" class="item active">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h1>Macbook Pro</h1>
+                        <p>Power to go.</p>
+                      </div>
+               
+                  </div> 
+
+
+            </div>
+            <div class="carousel-item">
+                <div id="cazza2" class="item">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h1>Surface book 2</h1>
+                        <p>Power beyond ordinary.</p>
+                      </div>
+               
+                  </div>
+              
+
+
+            </div>
+            <div class="carousel-item">
+                <div id="cazza3" class="item">
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h1>Xps laptops</h1>
+                        <p>Designed to be the best.</p>
+                      </div>
+               
+                  </div>
+
+
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+  
+  </header>
+
+   <body>
+     
+  <div class="container">
+    <div class="row" class="store-items" id="store-items">
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <img class="shop-item-image card-img" src="https://brain-images-ssl.cdn.dixons.com/6/0/10189706/u_10189706.jpg" alt="" class="card-img">
+           <h1 class="shop-item-title">DELL XPS 13 13.3" Laptop
+            </h1>
+           <h5 class="shop-item-price">£1050</h5>
+           <h5 class="text-left"> OS: Windows 10</h5>
+           <h5 class="text-left">RAM: 16GB/ Storage: 512 GB SSD</h5>
+           <h5 class="text-left"> 4K ultra HD display</h5>
+           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+            
+        </div>
+        
+        <div class="col-md-4 col-xs-6"> 
+          <div class="card">
+            <img class="shop-item-image card-img" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp13touch-space-select-201807_GEO_GB?wid=892&hei=820&&qlt=80&.v=1531167633655" alt="" class="card-img">
+           <h1 class="shop-item-title">Apple 13" MacBook Pro</h1>
+           <h5 class="shop-item-price"> £1100</h5>
+           <h5 class="text-left">MacOs</h5>
+           <h5 class="text-left">RAM: 8GB / Storage: 128GB SSD</h5>
+           <h5 class="text-left">Battery life: Up to 12 hours</h5>
+           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+          </div>
+
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+          
+              <div class="card" class="shop-item">
+                <img class="shop-item-image card-img" src="https://zdnet1.cbsistatic.com/hub/i/r/2018/09/14/2dda120d-ba35-4c61-a43e-435643dffa9d/thumbnail/770x433/e57601bd63a553fe7ca633b22fc37635/thinkpad-e580header.jpg" alt="" class="card-img">
+               <h1 class="shop-item-title">TinkPad T590 15" laptop</h1>
+               <h5 class="shop-item-price">£1000</h5>
+               <h5 class="text-left">OS: Windows 10 Pro</h5>
+               <h5 class="text-left">RAM: 8GB DDR4/ 256GB SSD</h5>
+               <h5 class="text-left">Battery life: Up to 12 hours</h5>
+               <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+              </div>
+          </div>
+        
+            
+
+        </div> 
+      </div>
+    </div>
+  </div>
+        </body>
+       
+        
+
+        
+
+ 
+        <!-- <div class="dropdown">
+          <div class="dropdown-toggle"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" id="cart"><i class="fas fa-shopping-cart fa-2x fa- cart-info__icon"></a></i>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="cart-overlay">
+              <div id="cart" class="cart">
+              
+              <h2 class="section-header">CART</h2>
+              <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">ITEM</span>
+                  <span class="cart-price cart-header cart-column">PRICE</span>
+                  <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+              </div>
+              <div class="cart-items">
+                  
+              </div>
+              <div class="cart-total">
+                  <strong class="cart-total-title">Total</strong>
+                  <span class="cart-total-price">£0</span>
+              </div>
+              <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+     
+
+          
+
+    
+
+       
+
+    <script>
+      $(".product-colors-1 span").click(function(){
+        $(".product-colors-1 span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background",$(this).attr("data-color"));
+        $(".product-price-1").css("color",$(this).attr("data-color"));
+        $(".product-button-1").css("color",$(this).attr("data-color"));
+        $(".product-pic-1").css("background-image",$(this).attr("data-pic"));
+      });
+    </script>
+
+<script>
+  $(".product-colors span").click(function(){
+    $(".product-colors span").removeClass("active");
+    $(this).addClass("active");
+    $("body").css("background",$(this).attr("data-color"));
+    $(".product-price").css("color",$(this).attr("data-color"));
+    $(".product-button").css("color",$(this).attr("data-color"));
+    $(".product-pic").css("background-image",$(this).attr("data-pic"));
+  });
+</script>
+
+
+
+   <!-- Footer -->
+<footer class="page-footer font-small blue bg-dark">
+
+  <h1>@Yousuf Ibrahim</h1>
+
+</footer>
+<!-- Footer -->
